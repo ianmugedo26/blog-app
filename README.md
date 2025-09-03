@@ -33,12 +33,12 @@ Watch the full development process on YouTube (FreeCodeCamp):
 ##  File Structure
 
 project-root/
-├── index.php # Displays blog posts and triggers modal forms
-├── script.php # Contains database connection & CRUD logic
-├── postHandler.php # Handles form submissions (Create/Edit/Delete)
-├── styles.css # Layout and styles for blog and modal
-├── app.js # Controls UI actions and AJAX calls
-└── database.sql # SQL to initialize blog posts table
+- ├── index.php # Displays blog posts and triggers modal forms
+- ├── script.php # Contains database connection & CRUD logic
+- ├── postHandler.php # Handles form submissions (Create/Edit/Delete)
+- ├── styles.css # Layout and styles for blog and modal
+- ├── app.js # Controls UI actions and AJAX calls
+- └── database.sql # SQL to initialize blog posts table
 
 
 ---
@@ -58,7 +58,7 @@ project-root/
      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
    );
 
-  Set up database connection in script.php:
+  Set up database connection in (`script.php`):
 ```php
 $conn = new mysqli("localhost", "root", "", "blog_project");
 if ($conn->connect_error) {
@@ -67,7 +67,7 @@ if ($conn->connect_error) {
 ```
 Launch the application by visiting:
 
-http://localhost/your-project-folder/
+`http://localhost/blog-app/`
 
 ## How It Works
 
